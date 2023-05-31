@@ -1,0 +1,232 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  margin:0;
+  padding:0;
+  font-size:1rem;
+  font-family: 'Lato', sans-serif;
+  background-blend-mode:color-dodge;
+  background: #39587f url(/public/image/World_map_with_points.svg);
+  /* background-size: contain;
+  object-fit: contain; */
+  color:whitesmoke;
+  /* background: #39587f url(/assets/images/world_map_fade.svg); */
+  /* border-top: 5px solid #4392FE; */
+/* font-family: 'Raleway', sans-serif; */
+/* background-image: linear-gradient(141deg, #ae6eff, #5c27d4);; */
+/* background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(67,146,254, 0.75)),
+    url('/public/image/bg.jpg'); */
+    /* background-size: cover;
+background:#11213B; 
+
+/* background: hsla(18, 76%, 85%, 1);
+
+background: linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 ); */
+}
+
+.full-cont{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+.header__square {
+  position: absolute;
+  top: -130px;
+  right: 50px;
+  width: 220px;
+  height: 220px;
+  background: -webkit-gradient(linear, left top, right top, from(#2336b6), to(rgba(31,38,103,0.9)));
+  background: linear-gradient(to right, #2336b6, rgba(31,38,103,0.9));
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+}
+
+.header__circle, .header__circle__two {
+  position: absolute;
+  top: -60px;
+  right: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 110px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(49,207,171,0.5)), to(#50e3c2));
+  background: linear-gradient(to right, rgba(49,207,171,0.5), #50e3c2);
+  mix-blend-mode: multiply;
+  -webkit-transition: all 250ms ease-out;
+  transition: all 250ms ease-out;
+  -webkit-transition-delay: 50ms;
+  z-index: -1;
+  transition-delay: 50ms;
+}
+
+.header__circle__two{
+  top:75vh;
+ 
+  left: -80px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.container{
+  display:flex;
+  flex-direction: column;
+  width:60%;
+  padding:30px;
+  margin: 0 auto;
+  background: #264265;
+  border-radius:5px;
+  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  /* border:1px solid gray; */
+}
+
+@media screen and (max-width: 980px) {
+  .container {width: 90%;}
+}
+
+.header-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  width:100%;
+  padding:20px 0;
+  margin:10px 0 20px;
+  /* background:white; */
+  /* border:1px solid white; */
+
+}
+
+
+.header-div h1{
+  font-size: 30px;
+  color:whitesmoke;
+}
+
+
+
+
+.cont{
+  display: flex;
+  flex-direction:column;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+  margin:10px 0;
+}
+
+.amount-cont{
+  width: 100%;
+  margin:20px  0 20px;
+
+}
+
+.main-cont{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap:15px;
+}
+
+.select-cont{
+  width:50%;
+}
+
+.toggle-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 10%; */
+  height: 60px;
+  padding:10px;
+  margin:10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  /* background:#50af8f; */
+  border: 1px solid rgba(225, 225, 225, 0.40);
+}
+
+.sm, label{
+  font-size:0.95rem;
+  color:rgba(225, 225, 225, 0.40);
+}
+
+h1{
+  font-weight: 400;
+  margin:0;
+}
+
+label{
+  text-align: left;
+}
+
+input, select{
+  width:100%;
+  height: 60px;
+  padding:10px;
+  margin:10px 0;
+  font-size:1rem;
+  border-radius: 5px;
+  color:whitesmoke;
+  border: 1px solid rgba(225, 225, 225, 0.40);
+  background-color: transparent;
+}
+
+
+input:focus, select:focus{
+  outline: none;
+}
+
+option{color:gray}
+
+select{
+  width: 100%;
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  color:whitesmoke;
+  text-transform: uppercase;
+  font-size:1.2rem;
+  letter-spacing: 1px;
+  background: #20a87b;
+  outline:none;
+  border:none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor:pointer;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: background 0.3s;
+}
+
+button:hover{
+  background:#1fa075;
+}
+
+.offline{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  text-align: center;
+  color:rgba(225, 225, 225, 0.40);
+  font-style:italic;
+  font-size: 1.5rem;
+  margin:50px 0;
+}
