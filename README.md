@@ -1,1 +1,1 @@
-# view online @ currencyconverting.netlify.app
+# View online @ currencyconverting.netlify.app
