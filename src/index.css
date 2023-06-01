@@ -9,77 +9,18 @@ html, body{
   font-family: 'Lato', sans-serif;
   background-blend-mode:color-dodge;
   background: #39587f url(/public/image/World_map_with_points.svg);
-  /* background-size: contain;
-  object-fit: contain; */
   color:whitesmoke;
-  /* background: #39587f url(/assets/images/world_map_fade.svg); */
-  /* border-top: 5px solid #4392FE; */
-/* font-family: 'Raleway', sans-serif; */
-/* background-image: linear-gradient(141deg, #ae6eff, #5c27d4);; */
-/* background-image:
-    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(67,146,254, 0.75)),
-    url('/public/image/bg.jpg'); */
-    /* background-size: cover;
-background:#11213B; 
-
-/* background: hsla(18, 76%, 85%, 1);
-
-background: linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-background: -moz-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-background: -webkit-linear-gradient(90deg, hsla(18, 76%, 85%, 1) 0%, hsla(203, 69%, 84%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", endColorstr="#B9DCF2", GradientType=1 ); */
+  /* display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:100%; */
 }
 
 .full-cont{
   width: 100%;
   position: relative;
   overflow: hidden;
-}
-
-
-
-
-.header__square {
-  position: absolute;
-  top: -130px;
-  right: 50px;
-  width: 220px;
-  height: 220px;
-  background: -webkit-gradient(linear, left top, right top, from(#2336b6), to(rgba(31,38,103,0.9)));
-  background: linear-gradient(to right, #2336b6, rgba(31,38,103,0.9));
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  -webkit-transition: all 250ms ease-out;
-  transition: all 250ms ease-out;
-}
-
-.header__circle, .header__circle__two {
-  position: absolute;
-  top: -60px;
-  right: -80px;
-  width: 220px;
-  height: 220px;
-  border-radius: 110px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(49,207,171,0.5)), to(#50e3c2));
-  background: linear-gradient(to right, rgba(49,207,171,0.5), #50e3c2);
-  mix-blend-mode: multiply;
-  -webkit-transition: all 250ms ease-out;
-  transition: all 250ms ease-out;
-  -webkit-transition-delay: 50ms;
-  z-index: -1;
-  transition-delay: 50ms;
-}
-
-.header__circle__two{
-  top:75vh;
- 
-  left: -80px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
 }
 
 .container{
@@ -90,8 +31,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", en
   margin: 0 auto;
   background: #264265;
   border-radius:5px;
-  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
-  /* border:1px solid gray; */
+  
 }
 
 @media screen and (max-width: 980px) {
@@ -104,8 +44,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F6CFBE", en
   align-items: center;
   gap:20px;
   width:100%;
-  padding:20px 0;
-  margin:10px 0 20px;
+  margin:30px 0 50px;
   /* background:white; */
   /* border:1px solid white; */
 

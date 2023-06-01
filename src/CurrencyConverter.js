@@ -12,10 +12,10 @@ import { RiWifiOffLine } from 'react-icons/ri';
 function CurrencyConverter() {
     const [isOnline, setIsOnline] = useState(navigator.onLine);
     const [exchangeRate, setExchangeRate] = useState(0)
-    const [amount, setAmount] = useState(0);
+    const [amount, setAmount] = useState(null);
     const [fromCurrency, setFromCurrency] = useState('USD');
     const [toCurrency, setToCurrency] = useState('EUR');
-    const [currencySymbol, setCurrencySymbol] = useState(0)
+    const [currencySymbol, setCurrencySymbol] = useState("€")
     const [convertedAmount, setConvertedAmount] = useState(0);
     const [currencyCode, setCurrencyCode] = useState([])
     const [list, setList] = useState([])
