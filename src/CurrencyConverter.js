@@ -12,7 +12,7 @@ import { RiWifiOffLine } from 'react-icons/ri';
 function CurrencyConverter() {
     const [isOnline, setIsOnline] = useState(navigator.onLine);
     const [exchangeRate, setExchangeRate] = useState(0)
-    const [amount, setAmount] = useState(null);
+    const [amount, setAmount] = useState('');
     const [fromCurrency, setFromCurrency] = useState('USD');
     const [toCurrency, setToCurrency] = useState('EUR');
     const [currencySymbol, setCurrencySymbol] = useState("€")
@@ -25,13 +25,14 @@ function CurrencyConverter() {
 
         setConvertedAmount(0);
 
-        currency_list.filter((item) => {
-            if (item.code === toCurrency){
-               return setCurrencySymbol(item.symbol)
-            } 
-        })
+        const currencyItem = currency_list.find(item => item.code === toCurrency);
+
+        if (currencyItem) {
+            setCurrencySymbol(currencyItem.symbol);
+        }
 
     }, [toCurrency, fromCurrency, amount, isOnline])
+
 
     useEffect(() => { 
         fetchExchangeRate()
@@ -91,9 +92,7 @@ function CurrencyConverter() {
     }
    
     let numDecimal = convertedValue.toString().match(/(\.0*)/)[0].length - 1
-    if(numDecimal === 0){
-        setConvertedAmount(convertedValue.toLocaleString("en-US", {minimumFractionDigits:2, maximumFractionDigits:2}));
-    }else if(numDecimal === 1){
+    if(numDecimal === 0 || numDecimal === 1){
         setConvertedAmount(convertedValue.toLocaleString("en-US", {minimumFractionDigits:2, maximumFractionDigits:2}));
     }else{
         setConvertedAmount(convertedValue.toLocaleString("en-US", {minimumFractionDigits:2, maximumFractionDigits:4}));
